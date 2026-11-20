@@ -1,51 +1,54 @@
 /*
- * The Rubber Article Template.
- *
- * Here is a quick run-down of the template.
- * Some example content has been added for you to see what the template looks like and how it works.
- * Some features of this template are explained here, so you might want to check it out.
- */
+  The Rubber Article Template.
 
-#import "@preview/rubber-article:0.5.2": *
+  Here is a quick run-down of the template.
+  Some example content has been added for you to see what the template looks like and how it works.
+  Some features of this template are explained here, so you might want to check it out.
+
+*/
+
+#import "@preview/ssrn-scribe:0.10.1": paper
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, edge, node
 
-// Layout and styling
-#show: article.with(
-  cols: none, // Tip: use #colbreak() instead of #pagebreak() to seamlessly toggle columns
-  eq-chapterwise: true,
-  eq-numbering: "(1.1)",
-  header-display: false,
-  header-title: "The Title of the Paper",
-  lang: "id",
-  page-margins: 3cm,
-  page-paper: "a4",
-  text-size: 11pt,
-  text-font: "Noto Sans",
+#show: paper.with(
+  meta: (
+    title: "Pengenalan Gestur Dinamis BISINDO Varietas Solo Berbasis MediaPipe Holistic dan Arsitektur Conv1D–BiGRU Teratensi pada Perangkat Mobile Edge",
+    authors: (
+      (name: "Dunhill William Putra", affiliation: "Universitas Sebelas Maret"),
+    ),
+    abstract: "",
+    keywords: "",
+  ),
+  layout: (
+    maketitle: true,
+    preset: "default",
+  ),
 )
 
-#set par(leading: 0.75em)
-#set par(spacing: 1em)
-
-// Frontmatter
-#maketitle(
-  title: "Pengenalan Gestur Dinamis BISINDO Varietas Solo Berbasis MediaPipe Holistic dan Arsitektur Conv1D–BiGRU Teratensi pada Perangkat Mobile Edge",
-  authors: ("Dunhill William Putra",),
-  date: datetime.today().display("[day] [month repr:long] [year]"),
+#let theme = (
+  font: ("Times New Roman", "Libertinus Serif"),
+  heading-font: ("Times New Roman", "Libertinus Serif"),
+  body-size: 12pt,
+  text: rgb("#111111"),
+  heading: rgb("#111111"),
+  muted: rgb("#444444"),
+  accent: rgb("#111111"),
+  rule: rgb("#8a8a8a"),
 )
 
 = Pendahuluan
 == Latar Belakang
-Akses terhadap komunikasi yang setara merupakan hak asasi dan prasyarat fundamental bagi partisipasi penuh komunitas Tuli dalam kehidupan sosial, pendidikan, serta dunia kerja @betri2026, @sutjiadi2023. Di Indonesia, komunitas Tuli secara alami mengadopsi Bahasa Isyarat Indonesia (BISINDO) sebagai bahasa ibu berbasis visual-spasial yang mengintegrasikan formasi gerakan tangan, orientasi telapak, posisi tubuh, dan ekspresi wajah @mahaputra2026, @rimbawa2025. Kendati Sistem Isyarat Bahasa Indonesia (SIBI) diajarkan secara formal di Sekolah Luar Biasa (SLB), struktur gramatikal SIBI yang mengadopsi tata bahasa lisan dinilai kaku dan tidak alamiah, sehingga mayoritas penyandang Tuli lebih nyaman berkomunikasi menggunakan BISINDO dalam interaksi keseharian @ahwani2024. Namun, rendahnya pemahaman masyarakat mendengar terhadap BISINDO dan keterbatasan media komunikasi mandiri memicu kesenjangan komunikasi yang nyata di ruang publik @sutjiadi2023.
+Akses terhadap komunikasi yang setara merupakan hak asasi dan prasyarat fundamental bagi partisipasi penuh komunitas Tuli dalam kehidupan sosial, pendidikan, serta dunia kerja @betri2026. Di Indonesia, komunitas Tuli secara alami mengadopsi Bahasa Isyarat Indonesia (BISINDO) sebagai bahasa ibu berbasis visual-spasial yang mengintegrasikan formasi gerakan tangan, orientasi telapak, posisi tubuh, dan ekspresi wajah @mahaputra2026. Kendati Sistem Isyarat Bahasa Indonesia (SIBI) diajarkan secara formal di Sekolah Luar Biasa (SLB), struktur gramatikal SIBI yang mengadopsi tata bahasa lisan dinilai kaku dan tidak alamiah, sehingga mayoritas penyandang Tuli lebih nyaman berkomunikasi menggunakan BISINDO dalam interaksi keseharian @ahwani2024. Namun, rendahnya pemahaman masyarakat mendengar terhadap BISINDO dan keterbatasan media komunikasi mandiri memicu kesenjangan komunikasi yang nyata di ruang publik @sutjiadi2023.
 
 Di sisi lain, kemajuan _Computer Vision_ (CV) dan _Deep Learning_ (DL) telah membuka peluang otomatisasi _Sign Language Recognition_ (SLR) sebagai jembatan komunikasi digital @rimbawa2025. Akan tetapi, sebagian besar penelitian SLR di Indonesia menghadapi dilema komputasi yang tajam antara akurasi model dan kepraktisan implementasi di dunia nyata. Di satu sisi, model-model mutakhir berbasis visual mentah (_raw pixel_) seperti CNN 2D/3D @sulistianingsih2025 atau detektor objek YOLO @swasono2025 memang mampu mengenali gestur, namun membutuhkan konsumsi komputasi dan memori yang sangat masif, serta rentan terdegradasi oleh variasi pencahayaan ruangan dan latar belakang yang kompleks @pramasaa2025. Pendekatan penerjemah kalimat kontinu berbasis peladen (_server-based_) @putra2025 juga menuntut infrastruktur komputasi kelas atas (_workstation_) yang tidak realistis untuk dibawa ke ranah penggunaan personal sehari-hari.
 
-Agar teknologi SLR dapat diakses secara inklusif oleh masyarakat luas, sistem pengenalan bahasa isyarat idealnya dapat dioperasikan langsung pada perangkat bergerak (_mobile edge_) seperti _smartphone_ Android @sutjiadi2023, @pramasaa2025. Implementasi inferensi _on-device_ mandiri tanpa ketergantungan peladen awan (_cloud_) memiliki urgensi vital: (1) menjamin privasi data visual pengguna karena video tidak dikirimkan ke jaringan eksternal, (2) mengeliminasi latensi transmisi jaringan nirkabel yang kerap berfluktuasi hingga beberapa detik @mahaputra2026, dan (3) memastikan aplikasi tetap dapat berfungsi di lingkungan dengan keterbatasan konektivitas internet. Namun, menjalankan inferensi model pembelajaran mendalam pada prosesor bergerak (ARM) yang memiliki keterbatasan daya komputasi dan memori menghadirkan tantangan teknis yang berat, khususnya dalam mempertahankan latensi inferensi di bawah 100 ms agar interaksi terasa waktu-nyata (_real-time_) @darmayunata2026.
+Agar teknologi SLR dapat diakses secara inklusif oleh masyarakat luas, sistem pengenalan bahasa isyarat idealnya dapat dioperasikan langsung pada perangkat bergerak (_mobile edge_) seperti _smartphone_ Android @sutjiadi2023. Implementasi inferensi _on-device_ mandiri tanpa ketergantungan peladen awan (_cloud_) memiliki urgensi vital: (1) menjamin privasi data visual pengguna karena video tidak dikirimkan ke jaringan eksternal, (2) mengeliminasi latensi transmisi jaringan nirkabel yang kerap berfluktuasi hingga beberapa detik @mahaputra2026, dan (3) memastikan aplikasi tetap dapat berfungsi di lingkungan dengan keterbatasan konektivitas internet. Namun, menjalankan inferensi model pembelajaran mendalam pada prosesor bergerak (ARM) yang memiliki keterbatasan daya komputasi dan memori menghadirkan tantangan teknis yang berat, khususnya dalam mempertahankan latensi inferensi di bawah 100 ms agar interaksi terasa waktu-nyata (_real-time_) @darmayunata2026.
 
-Untuk mengatasi beban komputasi visual mentah, ekstraksi titik koordinat rangka (_skeleton landmark_) berbasis MediaPipe Holistic @ahwani2024, @wisudawati2026 menawarkan solusi reduksi dimensionalitas yang sangat signifikan. MediaPipe mengekstrak koordinat geometris 3D sendi tangan dan pose tubuh atas secara efisien, membuang redundansi informasi piksel warna dan tekstur latar belakang, sehingga menghasilkan aliran fitur sekuensial yang ringan dan invarian terhadap variasi pencahayaan @lemmuela2025, @sutjiadi2023. Kendati demikian, mengenali gestur dinamis berbasis sekuens koordinat kerangka pada perangkat bergerak tetap memerlukan arsitektur sekuensial yang cermat. Model rekuren tunggal (LSTM atau GRU) @maheswara2024, @mahaputra2026 kerap mengalami lonjakan latensi saat memproses sekuens video panjang secara langsung, sedangkan arsitektur berbasis graf (GCN) atau Transformer memiliki jejak parameter yang terlalu berat untuk komputasi _edge_ @darmayunata2026, @sebastian2025.
+Untuk mengatasi beban komputasi visual mentah, ekstraksi titik koordinat rangka (_skeleton landmark_) berbasis MediaPipe Holistic @ahwani2024 menawarkan solusi reduksi dimensionalitas yang sangat signifikan. MediaPipe mengekstrak koordinat geometris 3D sendi tangan dan pose tubuh atas secara efisien, membuang redundansi informasi piksel warna dan tekstur latar belakang, sehingga menghasilkan aliran fitur sekuensial yang ringan dan invarian terhadap variasi pencahayaan @lemmuela2025. Kendati demikian, mengenali gestur dinamis berbasis sekuens koordinat kerangka pada perangkat bergerak tetap memerlukan arsitektur sekuensial yang cermat. Model rekuren tunggal (LSTM atau GRU) @maheswara2024 kerap mengalami lonjakan latensi saat memproses sekuens video panjang secara langsung, sedangkan arsitektur berbasis graf (GCN) atau Transformer memiliki jejak parameter yang terlalu berat untuk komputasi _edge_ @sebastian2025.
 
 Selain tantangan efisiensi komputasi _edge_, terdapat kesenjangan linguistik yang fundamental dalam literatur SLR di Indonesia. BISINDO merupakan bahasa alami yang bersifat polilektal dengan variasi leksikon dan artikulasi regional yang nyata antardaerah. Salah satu varietas yang aktif digunakan di Jawa Tengah adalah BISINDO varietas Solo (Surakarta). Sayangnya, penelitian SLR di Indonesia saat ini mengalami bias sentralisasi yang tajam: mayoritas penelitian hanya berfokus pada alfabet statis nasional atau dataset publik varietas Jakarta @sutjiadi2023. Belum tersedia korpus komputasional terstandarisasi yang mendokumentasikan BISINDO varietas regional Solo. Memaksakan model yang dilatih pada varietas lain atau representasi alfabet statis tidak hanya memicu penurunan akurasi akibat pergeseran domain (_domain shift_), tetapi juga mengabaikan karakteristik unik komunikasi komunitas Tuli lokal.
 
-Menjawab tantangan tersebut, penelitian ini berfokus pada _benchmarking_ dan evaluasi komprehensif implementasi model pengenalan gestur dinamis BISINDO varietas Solo pada perangkat _mobile edge_ Android. Penelitian ini mengusulkan arsitektur hibrida ringan yang mengombinasikan dua lapisan Conv1D, Bidirectional GRU (BiGRU), dan mekanisme _Temporal Attention_. Dua lapisan Conv1D bertingkat dirancang untuk mengekstrak korelasi spasial-temporal lokal antar-sendi sekaligus mereduksi panjang sekuens waktu melalui _pooling_ bertingkat, sehingga memangkas beban komputasi rekuren BiGRU hingga 75%. Lapisan _Temporal Attention_ ditempatkan pasca-BiGRU untuk memfokuskan pembobotan pada frame puncak gestur (_apex frames_) yang paling diskriminatif @sebastian2025, @darmayunata2026. Selanjutnya, model dioptimasi dan dikuantisasi melalui format TensorFlow Lite (TFLite) untuk menguji _trade-off_ antara retensi akurasi, ukuran model, dan latensi inferensi di bawah 100 ms pada perangkat Android. Melalui pengujian validasi silang lintas-peraga (_cross-signer evaluation_), penelitian ini diharapkan memberikan bukti empiris mengenai batas kelayakan teknis pengenalan gestur dinamis berbasis _landmark_ pada perangkat bergerak.
+Menjawab tantangan tersebut, penelitian ini berfokus pada _benchmarking_ dan evaluasi komprehensif implementasi model pengenalan gestur dinamis BISINDO varietas Solo pada perangkat _mobile edge_ Android. Penelitian ini mengusulkan arsitektur hibrida ringan yang mengombinasikan dua lapisan Conv1D, Bidirectional GRU (BiGRU), dan mekanisme _Temporal Attention_. Dua lapisan Conv1D bertingkat dirancang untuk mengekstrak korelasi spasial-temporal lokal antar-sendi sekaligus mereduksi panjang sekuens waktu melalui _pooling_ bertingkat, sehingga memangkas beban komputasi rekuren BiGRU hingga 75%. Lapisan _Temporal Attention_ ditempatkan pasca-BiGRU untuk memfokuskan pembobotan pada frame puncak gestur (_apex frames_) yang paling diskriminatif @darmayunata2026. Selanjutnya, model dioptimasi dan dikuantisasi melalui format TensorFlow Lite (TFLite) untuk menguji _trade-off_ antara retensi akurasi, ukuran model, dan latensi inferensi di bawah 100 ms pada perangkat Android. Melalui pengujian validasi silang lintas-peraga (_cross-signer evaluation_), penelitian ini diharapkan memberikan bukti empiris mengenai batas kelayakan teknis pengenalan gestur dinamis berbasis _landmark_ pada perangkat bergerak.
 
 == Rumusan Masalah
 
@@ -77,11 +80,13 @@ Menjawab tantangan tersebut, penelitian ini berfokus pada _benchmarking_ dan eva
 
 == Manfaat Penelitian
 
-+ *Manfaat Teoretis dan Akademis*: Memperluas literatur komputasi SLR ke ranah varietas regional BISINDO Solo yang selama ini belum terpetakan, serta memberikan bukti empiris mengenai keunggulan arsitektur hibrida Conv1D–BiGRU–Attention dalam memodelkan fitur skeleton berdimensi ringkas pada skenario lintas-peraga.
++ Manfaat Teoretis dan Akademis: Memperluas literatur komputasi SLR ke ranah varietas regional BISINDO Solo yang selama ini belum terpetakan, serta memberikan bukti empiris mengenai keunggulan arsitektur hibrida Conv1D–BiGRU–Attention dalam memodelkan fitur skeleton berdimensi ringkas pada skenario lintas-peraga.
 
-+ *Manfaat Praktis dan Teknologis*: Menghasilkan model pembelajaran mendalam yang teroptimasi dan siap dioperasikan langsung pada perangkat bergerak Android dengan latensi sub-100 ms, membuktikan kelayakan teknis inferensi _on-device_ tanpa ketergantungan infrastruktur peladen awan.
++ Manfaat Praktis dan Teknologis: Menghasilkan model pembelajaran mendalam yang teroptimasi dan siap dioperasikan langsung pada perangkat bergerak Android dengan latensi sub-100 ms, membuktikan kelayakan teknis inferensi _on-device_ tanpa ketergantungan infrastruktur peladen awan.
 
-+ *Manfaat Sosial*: Meletakkan fondasi teknologi asisten bahasa isyarat bergerak yang privat, portabel, dan terjangkau bagi komunitas Tuli maupun masyarakat umum, guna memfasilitasi komunikasi inklusif di tingkat lokal.
++ Manfaat Sosial: Meletakkan fondasi teknologi asisten bahasa isyarat bergerak yang privat, portabel, dan terjangkau bagi komunitas Tuli maupun masyarakat umum, guna memfasilitasi komunikasi inklusif di tingkat lokal.
+
+#colbreak()
 
 = Tinjauan Pustaka
 // == Landasan Teori
@@ -110,7 +115,7 @@ Sebagai solusi atas hambatan tersebut, bahasa isyarat hadir sebagai sistem komun
 ) <tbl-sibi-bisindo>
 
 == Pose Estimation dan MediaPipe Holistic
-Salah satu pendekatan yang banyak digunakan untuk mengatasi kompleksitas DSL adalah pose estimation yang mengekstrak landmark kunci dari tubuh, tangan, dan wajah sebagai representasi fitur yang lebih ringkas namun informatif @samaan2022, @maheswara2024. MediaPipe Holistic merupakan framework yang menyediakan deteksi dan tracking landmark multi‑bagian (tangan, pose, dan wajah) secara real‑time dari video, sehingga cocok digunakan sebagai front‑end ekstraksi fitur untuk tugas pengenalan bahasa isyarat @ahwani2024, @wisudawati2026.
+Salah satu pendekatan yang banyak digunakan untuk mengatasi kompleksitas DSL adalah pose estimation yang mengekstrak landmark kunci dari tubuh, tangan, dan wajah sebagai representasi fitur yang lebih ringkas namun informatif @samaan2022. MediaPipe Holistic merupakan framework yang menyediakan deteksi dan tracking landmark multi‑bagian (tangan, pose, dan wajah) secara real‑time dari video, sehingga cocok digunakan sebagai front‑end ekstraksi fitur untuk tugas pengenalan bahasa isyarat @wisudawati2026.
 
 #figure(
   image("mediapipe.pdf", width: 60%),
@@ -124,10 +129,10 @@ Alur ekstraksi fitur menggunakan MediaPipe Holistic ditunjukkan pada @pipeline-m
   caption: "Pipeline ekstraksi landmark MediaPipe Holistic",
 ) <pipeline-mediapipe>
 
-Dengan menggunakan koordinat landmark sebagai input, sistem dapat mengabaikan sebagian besar informasi raw piksel dan fokus pada struktur gerakan, sehingga mengurangi beban komputasi dan membuat deployment di perangkat edge seperti smartphone menjadi lebih feasible @lemmuela2025, @sutjiadi2023. Pendekatan ini juga membantu mengatasi tantangan yang muncul pada background kompleks dan variasi pencahayaan, karena model bekerja pada representasi skeleton/landmark, bukan langsung pada citra berwarna @wisudawati2026.
+Dengan menggunakan koordinat landmark sebagai input, sistem dapat mengabaikan sebagian besar informasi raw piksel dan fokus pada struktur gerakan, sehingga mengurangi beban komputasi dan membuat deployment di perangkat edge seperti smartphone menjadi lebih feasible @lemmuela2025. Pendekatan ini juga membantu mengatasi tantangan yang muncul pada background kompleks dan variasi pencahayaan, karena model bekerja pada representasi skeleton/landmark, bukan langsung pada citra berwarna @wisudawati2026.
 
 == Recurrent Neural Network (RNN), Gated Recurrent Unit (GRU), dan Long Short-Term Memory (LSTM)
-Dynamic sign language recognition secara alamiah membutuhkan model yang mampu memproses data sekuensial, sehingga Recurrent Neural Network (RNN) dan turunannya seperti Long Short‑Term Memory (LSTM) dan Gated Recurrent Unit (GRU) banyak digunakan @samaan2022, @myagila2025. RNN memanfaatkan hidden state yang dipropagasikan sepanjang urutan waktu untuk menangkap ketergantungan temporal, sedangkan LSTM dan GRU menambahkan mekanisme gate untuk mengatasi masalah vanishing gradient dan mempelajari dependensi jangka panjang secara lebih stabil.
+Dynamic sign language recognition secara alamiah membutuhkan model yang mampu memproses data sekuensial, sehingga Recurrent Neural Network (RNN) dan turunannya seperti Long Short‑Term Memory (LSTM) dan Gated Recurrent Unit (GRU) banyak digunakan @myagila2025. RNN memanfaatkan hidden state yang dipropagasikan sepanjang urutan waktu untuk menangkap ketergantungan temporal, sedangkan LSTM dan GRU menambahkan mekanisme gate untuk mengatasi masalah vanishing gradient dan mempelajari dependensi jangka panjang secara lebih stabil.
 
 Ketiga arsitektur tersebut diformulasikan sebagai berikut:
 
@@ -170,7 +175,7 @@ $ h_t = (1 - z_t) * h_(t-1) + z_t * tilde(h)_t $
 
 dengan $r_t$ adalah reset gate yang mengontrol seberapa banyak informasi lampau yang dilupakan, $z_t$ adalah update gate yang menentukan seberapa banyak informasi baru yang ditambahkan, dan $h_t$ adalah hidden state pada waktu $t$.
 
-Dalam konteks HAR dan sign language recognition, model seperti GRU dan LSTM terbukti efektif dalam mengklasifikasikan sekuens landmark atau fitur citra menjadi label aktivitas atau kata tertentu @maheswara2024, @myagila2025. Beberapa penelitian menunjukkan bahwa kombinasi MediaPipe Holistic dengan GRU/LSTM mampu mencapai akurasi tinggi pada dataset DSL maupun BISINDO, sekaligus mendemonstrasikan kemampuan generalisasi di skenario real‑time @lemmuela2025, @mahaputra2026, @wisudawati2026.
+Dalam konteks HAR dan sign language recognition, model seperti GRU dan LSTM terbukti efektif dalam mengklasifikasikan sekuens landmark atau fitur citra menjadi label aktivitas atau kata tertentu @maheswara2024. Beberapa penelitian menunjukkan bahwa kombinasi MediaPipe Holistic dengan GRU/LSTM mampu mencapai akurasi tinggi pada dataset DSL maupun BISINDO, sekaligus mendemonstrasikan kemampuan generalisasi di skenario real‑time @wisudawati2026.
 
 == Convolutional Neural Network 1D (Conv1D)
 Convolutional Neural Network (CNN) pada awalnya dikembangkan untuk data citra dua dimensi, namun varian satu dimensinya (Conv1D) banyak diadopsi untuk pemrosesan data sekuensial seperti sinyal, teks, dan rangkaian fitur gerakan. Operasi konvolusi 1D bekerja dengan menggeser filter (kernel) satu arah sepanjang dimensi temporal dari sekuens input untuk menghasilkan peta fitur yang merepresentasikan pola lokal pada berbagai posisi.
@@ -181,28 +186,28 @@ $ y_i = sum_(j=0)^(k-1) w_j * x_(i+j) + b $
 
 dengan $b$ adalah bias. Setelah konvolusi, umumnya diterapkan fungsi aktivasi non-linear seperti ReLU ($"ReLU"(x) = max(0, x)$) untuk menambah kapasitas representasi, serta lapisan pooling seperti MaxPooling 1D untuk mereduksi dimensi temporal dan mempertahankan fitur paling dominan.
 
-Dalam konteks pengenalan bahasa isyarat berbasis landmark, penggunaan *dua lapisan Conv1D bertingkat (stacked Conv1D)* yang masing-masing diikuti oleh MaxPooling 1D memiliki tiga fungsi arsitektural krusial:
-1. *Ekstraksi Fitur Spasial-Temporal Berjenjang (Hierarchical Feature Representation)*: Lapisan Conv1D pertama dengan kernel $k=5$ menangkap kinematika mikro lokal, seperti sudut relatif antar-sendi dan kecepatan pergerakan jari pada jendela 5 frame (~166 ms pada 30 fps). Setelah direduksi oleh MaxPooling 1D pertama, lapisan Conv1D kedua beroperasi pada representasi fitur yang lebih abstrak dengan *effective receptive field* yang berlipat ganda (~10–14 frame atau ~350–450 ms), sehingga mampu mengekstrak pola meso berupa trajektori tangan dan fase transisi bentuk gestur.
-2. *Kompresi Temporal ($4times$ Downsampling) untuk Efisiensi Edge*: Kompleksitas komputasi recurrent neural network (BiGRU) berbanding lurus dengan panjang sekuens waktu ($O(T dot d^2)$). Pada CPU smartphone ARM, menjalankan BiGRU secara bolak-balik pada sekuens panjang (misalnya 60 frame) akan memicu beban komputasi masif dan meningkatkan latensi inferensi. Dengan menyusun dua blok Conv1D yang masing-masing menerapkan MaxPooling 1D dengan faktor reduksi 2, panjang sekuens dipadatkan sebesar $2 times 2 = 4times$ (dari 60 frame menjadi 15 time-steps). Hal ini memangkas iterasi *unrolling* pada BiGRU hingga 75%, menjadikannya sangat efisien untuk mencapai inferensi sub-100 ms pada perangkat mobile.
-3. *Penyaring Derau Koordinat MediaPipe*: Koordinat landmark 3D dari MediaPipe rentan mengalami fluktuasi spasial kecil (*jitter*) antar-frame akibat kondisi pencahayaan atau *motion blur*. Dua blok Conv1D yang dilengkapi Batch Normalization bertindak sebagai filter penghalus (*smoothing filter*) yang memetakan koordinat bising menjadi representasi laten yang stabil sebelum diproses oleh lapisan rekuren @sulistianingsih2025, @darmayunata2026.
+Dalam konteks pengenalan bahasa isyarat berbasis landmark, penggunaan dua lapisan Conv1D bertingkat (stacked Conv1D) yang masing-masing diikuti oleh MaxPooling 1D memiliki tiga fungsi arsitektural krusial:
++ Ekstraksi Fitur Spasial-Temporal Berjenjang (Hierarchical Feature Representation): Lapisan Conv1D pertama dengan kernel $k=5$ menangkap kinematika mikro lokal, seperti sudut relatif antar-sendi dan kecepatan pergerakan jari pada jendela 5 frame (~166 ms pada 30 fps). Setelah direduksi oleh MaxPooling 1D pertama, lapisan Conv1D kedua beroperasi pada representasi fitur yang lebih abstrak dengan effective receptive field yang berlipat ganda (~10–14 frame atau ~350–450 ms), sehingga mampu mengekstrak pola meso berupa trajektori tangan dan fase transisi bentuk gestur.
++ Kompresi Temporal ($4times$ Downsampling) untuk Efisiensi Edge: Kompleksitas komputasi recurrent neural network (BiGRU) berbanding lurus dengan panjang sekuens waktu ($O(T dot d^2)$). Pada CPU smartphone ARM, menjalankan BiGRU secara bolak-balik pada sekuens panjang (misalnya 60 frame) akan memicu beban komputasi masif dan meningkatkan latensi inferensi. Dengan menyusun dua blok Conv1D yang masing-masing menerapkan MaxPooling 1D dengan faktor reduksi 2, panjang sekuens dipadatkan sebesar $2 times 2 = 4times$ (dari 60 frame menjadi 15 time-steps). Hal ini memangkas iterasi unrolling pada BiGRU hingga 75%, menjadikannya sangat efisien untuk mencapai inferensi sub-100 ms pada perangkat mobile.
++ Penyaring Derau Koordinat MediaPipe: Koordinat landmark 3D dari MediaPipe rentan mengalami fluktuasi spasial kecil (jitter) antar-frame akibat kondisi pencahayaan atau motion blur. Dua blok Conv1D yang dilengkapi Batch Normalization bertindak sebagai filter penghalus (smoothing filter) yang memetakan koordinat bising menjadi representasi laten yang stabil sebelum diproses oleh lapisan rekuren @darmayunata2026.
 
 == Attention Mechanism
-Mekanisme atensi (*attention mechanism*) memungkinkan model untuk secara dinamis memfokuskan pembobotan pada bagian-bagian tertentu dari sekuens input yang paling relevan dengan tugas klasifikasi. Dalam gestur dinamis bahasa isyarat, tidak seluruh frame memiliki nilai informasi yang setara. Suatu gestur umumnya terbagi menjadi tiga fase: fase persiapan (*preparation*), fase puncak eksekusi (*stroke/apex*), dan fase kembali ke posisi rileks (*retraction*).
+Mekanisme atensi (attention mechanism) memungkinkan model untuk secara dinamis memfokuskan pembobotan pada bagian-bagian tertentu dari sekuens input yang paling relevan dengan tugas klasifikasi. Dalam gestur dinamis bahasa isyarat, tidak seluruh frame memiliki nilai informasi yang setara. Suatu gestur umumnya terbagi menjadi tiga fase: fase persiapan (preparation), fase puncak eksekusi (stroke/apex), dan fase kembali ke posisi rileks (retraction).
 
-Secara konvensional, model rekuren mengklasifikasikan sekuens dengan hanya mengambil *hidden state* terakhir ($h_T$) atau menerapkan *global average pooling*. Namun, kedua pendekatan tersebut memiliki kelemahan mendasar pada gestur bahasa isyarat:
-- Mengambil hanya $h_T$ memicu *recency bias*, di mana model justru mengingat gerakan tangan kembali istirahat (*retraction*) atau frame *padding*, bukan bentuk inti gestur yang telah terjadi di pertengahan sekuens.
-- Menerapkan *average pooling* meratakan bobot seluruh frame ($1/T$), sehingga mengencerkan (*dilutes*) fitur diskriminatif pada frame puncak dengan frame persiapan yang tidak informatif.
+Secara konvensional, model rekuren mengklasifikasikan sekuens dengan hanya mengambil hidden state terakhir ($h_T$) atau menerapkan global average pooling. Namun, kedua pendekatan tersebut memiliki kelemahan mendasar pada gestur bahasa isyarat:
++ Mengambil hanya $h_T$ memicu recency bias, di mana model justru mengingat gerakan tangan kembali istirahat (retraction) atau frame padding, bukan bentuk inti gestur yang telah terjadi di pertengahan sekuens.
++ Menerapkan average pooling meratakan bobot seluruh frame ($1/T$), sehingga mengencerkan (dilutes) fitur diskriminatif pada frame puncak dengan frame persiapan yang tidak informatif.
 
-Oleh karena itu, penempatan lapisan *Temporal Attention* tepat setelah lapisan Bidirectional GRU (BiGRU) menjadi solusi ideal. Ketika BiGRU disetel dengan parameter `return_sequences=True`, model menghasilkan sekuens vektor representasi terkontekstualisasi $H = [h_1, h_2, dots, h_(T')]$ di mana setiap $h_t = [arrow.r(h)_t, arrow.l(h)_t]$ merangkum konteks temporal dari dua arah waktu (masa lalu dan masa depan). Lapisan *Temporal Attention* pasca-BiGRU selanjutnya menghitung skor relevansi ($e_t$) dan bobot atensi ternormalisasi ($alpha_t$):
+Oleh karena itu, penempatan lapisan Temporal Attention tepat setelah lapisan Bidirectional GRU (BiGRU) menjadi solusi ideal. Ketika BiGRU disetel dengan parameter `return_sequences=True`, model menghasilkan sekuens vektor representasi terkontekstualisasi $H = [h_1, h_2, dots, h_(T')]$ di mana setiap $h_t = [arrow.r(h)_t, arrow.l(h)_t]$ merangkum konteks temporal dari dua arah waktu (masa lalu dan masa depan). Lapisan Temporal Attention pasca-BiGRU selanjutnya menghitung skor relevansi ($e_t$) dan bobot atensi ternormalisasi ($alpha_t$):
 
 $ e_t = v^T tanh(W h_t + b) $
 $ alpha_t = exp(e_t) / sum_(j=1)^(T') exp(e_j) $
 $ c = sum_(t=1)^(T') alpha_t h_t $
 
-dengan $W$ adalah matriks bobot proyeksi, $b$ bias, $v$ vektor konteks atensi, dan $c$ adalah vektor konteks akhir yang merupakan representasi sekuens terbobot. Melalui formulasi ini, lapisan atensi secara adaptif memberikan bobot dominan ($alpha_t approx 1$) pada frame puncak gestur (*apex frames*) dan menekan bobot frame persiapan, transisi, maupun *padding* hingga mendekati nol @sebastian2025, @darmayunata2026. Vektor representasi $c$ yang padat dan informatif ini kemudian diteruskan ke lapisan klasifikasi akhir.
+dengan $W$ adalah matriks bobot proyeksi, $b$ bias, $v$ vektor konteks atensi, dan $c$ adalah vektor konteks akhir yang merupakan representasi sekuens terbobot. Melalui formulasi ini, lapisan atensi secara adaptif memberikan bobot dominan ($alpha_t approx 1$) pada frame puncak gestur (apex frames) dan menekan bobot frame persiapan, transisi, maupun padding hingga mendekati nol @sebastian2025. Vektor representasi $c$ yang padat dan informatif ini kemudian diteruskan ke lapisan klasifikasi akhir.
 
 == Optimasi Model dengan TensorFlow Lite untuk Perangkat Mobile
-TensorFlow Lite (TFLite) adalah seperangkat alat untuk menjalankan model machine learning pada perangkat edge seperti smartphone Android @sutjiadi2023, @pramasaa2025. TFLite mengonversi model TensorFlow ke format FlatBuffer yang ringkas serta menyediakan interpreter yang dioptimasi untuk arsitektur ARM @lucian2025. Alur konversi dan teknik optimasi yang disediakan TFLite ditunjukkan pada @fig-tflite.
+TensorFlow Lite (TFLite) adalah seperangkat alat untuk menjalankan model machine learning pada perangkat edge seperti smartphone Android @pramasaa2025. TFLite mengonversi model TensorFlow ke format FlatBuffer yang ringkas serta menyediakan interpreter yang dioptimasi untuk arsitektur ARM @lucian2025. Alur konversi dan teknik optimasi yang disediakan TFLite ditunjukkan pada @fig-tflite.
 
 #figure(
   image("convert.pdf", width: 70%),
@@ -210,142 +215,32 @@ TensorFlow Lite (TFLite) adalah seperangkat alat untuk menjalankan model machine
 ) <fig-tflite>
 
 == Evaluasi Sistem Rekognisi Bahasa Isyarat
-Evaluasi sistem rekognisi bahasa isyarat umumnya menggunakan metrik klasifikasi seperti accuracy, precision, recall, dan F1‑score untuk mengukur kemampuan model mengenali label gestur dengan benar. Keempat metrik tersebut didefinisikan sebagai berikut:
+Evaluasi sistem rekognisi bahasa isyarat untuk klasifikasi multi-kelas (20 kelas gestur BISINDO) dilakukan menggunakan pendekatan _One-vs-Rest_ (OvR) berbasis matriks konfusi (_confusion matrix_). Pada setiap kelas gestur $c in {1, 2, dots, K}$, didefinisikan empat kuadran hasil prediksi:
++ *True Positive* ($"TP"_c$): Sampel video gestur $c$ yang berhasil diprediksi dengan benar sebagai kelas $c$.
++ *False Positive* ($"FP"_c$): Sampel video dari gestur lain yang keliru diprediksi oleh model sebagai kelas $c$ (_false alarm_ / salah tebak).
++ *False Negative* ($"FN"_c$): Sampel video dari gestur $c$ yang gagal dikenali dan keliru diprediksi sebagai kelas lain (_missed detection_ / luput).
++ *True Negative* ($"TN"_c$): Sampel video dari gestur bukan $c$ yang berhasil diprediksi secara benar sebagai bukan kelas $c$.
 
-$ "Accuracy" = ("TP" + "TN") / ("TP" + "TN" + "FP" + "FN") $
+Berdasarkan nilai-nilai tersebut, performa model dievaluasi melalui metrik akurasi global (_overall accuracy_), serta presisi, _recall_, dan skor F1 per kelas:
 
-$ "Precision" = "TP" / ("TP" + "FP") $
+$ "Accuracy" = (sum_(c=1)^K "TP"_c) / N $
 
-$ "Recall" = "TP" / ("TP" + "FN") $
+$ "Precision"_c = "TP"_c / ("TP"_c + "FP"_c) $
 
-$ "F1" = 2 * "P" * "R" / ("P" + "R") $
+$ "Recall"_c = "TP"_c / ("TP"_c + "FN"_c) $
 
-dengan $"TP"$ adalah true positives, $"TN"$ true negatives, $"FP"$ false positives, $"FN"$ false negatives, $"P"$ precision, dan $"R"$ recall.
+$ "F1"_c = (2 * "Precision"_c * "Recall"_c) / ("Precision"_c + "Recall"_c) $
+
+dengan $N$ adalah total seluruh sampel pengujian ($N = 500$) dan $K$ adalah jumlah kelas gestur ($K = 20$). Untuk merepresentasikan performa agregat model secara adil pada dataset berdistribusi seimbang, digunakan metrik rerata makro (_macro-average_):
+
+$ "Macro-F1" = 1 / K sum_(c=1)^K "F1"_c $
 
 Selain itu, untuk sistem yang menargetkan penggunaan real‑time di perangkat edge, aspek non‑fungsional seperti latensi inference, ukuran model, dan konsumsi sumber daya (memori dan komputasi) juga menjadi kriteria penting dalam menilai kelayakan deployment @darmayunata2026.
 
 Pada studi sign language translation yang berskala kalimat, metrik tambahan seperti Word Error Rate (WER), Sentence Accuracy (SAcc), dan skor BLEU atau SacreBLEU digunakan untuk menilai kualitas translasi sekuens @putra2025. Meskipun penelitian ini berfokus pada kata terisolasi BISINDO Solo, prinsip pemilihan metrik yang sesuai dengan konteks evaluasi lintas-peraga dan benchmarking latensi on-device tetap krusial dalam perancangan eksperimen dan interpretasi hasil.
 
-== Penelitian Terkait
-Penelitian mengenai pengenalan Bahasa Isyarat Indonesia (BISINDO) dalam beberapa tahun terakhir menunjukkan perkembangan yang pesat, dengan beragam pendekatan mulai dari citra statis, video dinamis, pose/landmark, hingga deployment pada platform mobile, web, dan embedded. @tbl-penelitian-terkait merangkum studi-studi utama yang relevan dengan penelitian ini.
+#colbreak()
 
-#figure(
-  table(
-    columns: (auto, auto, auto, auto),
-    inset: 0.8em,
-    stroke: (x, y) => if y <= 1 { (top: 0.5pt) },
-    fill: (x, y) => if y > 0 and calc.rem(y, 2) == 0 { rgb("#efefef") },
-    align: left,
-    table.header([*Peneliti*], [*Metode*], [*Dataset & Kelas*], [*Keterbatasan Utama*]),
-    [@sutjiadi2023],
-    [MobileNetV3 + TFLite Android],
-    [6.240 citra, 26 alfabet BISINDO],
-    [Akurasi rendah pada gestur dua tangan; terbatas citra statis],
-
-    [@sulistianingsih2025],
-    [Hybrid CNN-LSTM],
-    [Video alfabet dinamis BISINDO],
-    [Beban komputasi tinggi pada video mentah; belum teroptimasi edge],
-
-    [@maheswara2024],
-    [MediaPipe Holistic + GRU/LSTM],
-    [2.400 video, 20 gestur BISINDO],
-    [Penurunan akurasi saat real-time; evaluasi signer terbatas],
-
-    [@lemmuela2025],
-    [MediaPipe + BiLSTM / CNN],
-    [315 video, 15 kata BISINDO],
-    [Kosakata terbatas konteks ibadah; pengujian sebatas desktop],
-
-    [@putra2025],
-    [YOLOv8 + TCRF + MobileNetV2 + LSTM],
-    [190 kalimat, 435 label BISINDO],
-    [Beban komputasi tinggi, skenario server bukan perangkat edge],
-
-    [@mahaputra2026],
-    [MediaPipe + LSTM + ESP32],
-    [250 sampel, 5 kata BISINDO],
-    [Dataset 1 peraga, 5 kata saja; latensi transmisi 3,8 detik],
-
-    [@pramasaa2025],
-    [MobileNetV2 SSD + TFLite],
-    [5.902 citra, 26 alfabet BISINDO],
-    [Terbatas alfabet statis; degradasi akurasi pada lux rendah],
-
-    [@sebastian2025],
-    [MediaPipe Holistic + GCN + BiLSTM],
-    [51 kelas (alfabet & kata)],
-    [Inferensi graf kompleks; sensitif missing keypoints],
-  ),
-  caption: "Ringkasan penelitian terkait pengenalan BISINDO dan dynamic sign language",
-) <tbl-penelitian-terkait>
-
-Dari tabel @tbl-penelitian-terkait, terlihat bahwa pendekatan yang digunakan sangat bervariasi, mulai dari model berbasis citra visual mentah (@sutjiadi2023, @pramasaa2025), MediaPipe Holistic dengan GRU/LSTM untuk video dinamis (@maheswara2024, @lemmuela2025), hingga model translasi kalimat berbasis server (@putra2025). Skala deployment pun beragam, dari server dan PC hingga perangkat edge seperti Android (@sutjiadi2023) dan mikrokontroler (@mahaputra2026). Masing-masing pendekatan menunjukkan potensi dan keterbatasannya masing-masing yang menjadi dasar identifikasi gap pada sub-bab selanjutnya.
-
-== Gap Penelitian
-@tbl-gap merangkum gap-gap utama yang diidentifikasi dari penelitian-penelitian yang telah dibahas serta posisi penelitian ini terhadap masing-masing gap tersebut.
-
-#figure(
-  table(
-    columns: (auto, auto, auto),
-    inset: 1em,
-    stroke: (x, y) => if y <= 1 { (top: 0.5pt) },
-    fill: (x, y) => if y > 0 and calc.rem(y, 2) == 0 { rgb("#efefef") },
-    align: left,
-    table.header([*Aspek*], [*State-of-the-Art*], [*Posisi Penelitian Ini*]),
-    [
-      Dataset
-    ],
-    [
-      Alfabet statis BISINDO dari webcam publik; ketiadaan dataset varietas regional (@sutjiadi2023, @pramasaa2025)
-    ],
-    [
-      Membangun dataset BISINDO Solo 20 kelas terstandarisasi dengan 5 peraga (signer)
-    ],
-
-    [
-      Jenis gestur
-    ],
-    [
-      Dominan alfabet statis; gestur dinamis berbasis video mentah berbobot tinggi (@sulistianingsih2025, @putra2025)
-    ],
-    [
-      Gestur dinamis berbasis 51 landmark MediaPipe Holistic yang ringan dan invarian lingkungan
-    ],
-
-    [
-      Metode
-    ],
-    [
-      Model sekuensial tunggal atau model graf berlatensi tinggi (@maheswara2024, @sebastian2025)
-    ],
-    [
-      Arsitektur hibrida Conv1D–BiGRU teratensi temporal yang efisien untuk edge device
-    ],
-
-    [
-      Target \ deployment
-    ],
-    [
-      Server/PC atau Android terbatas pada alfabet statis (@sutjiadi2023, @putra2025)
-    ],
-    [
-      Aplikasi bergerak Android (TFLite) untuk gestur dinamis dengan target latensi inferensi di bawah 100 ms
-    ],
-
-    [
-      Konteks \ evaluasi
-    ],
-    [
-      Pengujian peraga homogen (_signer-dependent_) atau demonstrasi laboratorium tanpa uji latensi perangkat (@maheswara2024, @mahaputra2026)
-    ],
-    [
-      _Benchmarking_ ketat lintas-peraga (_cross-signer_ LOSO) serta evaluasi kompresi model dan latensi _on-device_
-    ],
-  ),
-  caption: "Analisis gap penelitian dan posisi penelitian ini",
-) <tbl-gap>
-//
 = Metode Penelitian
 
 Fokus utama penelitian ini adalah mengukur dan menganalisis performa model SLR secara terukur melalui metrik numerik. Maka dari itu, digunakan pendekatan quasi eksperimental yang memungkinkan evaluasi sistematis terhadap pengaruh desain arsitektur model dan skenario deployment terhadap akurasi klasifikasi gestur BISINDO Solo.
@@ -395,19 +290,19 @@ Setelah augmentasi, setiap frame video diproses menggunakan MediaPipe Holistic u
 
 Arsitektur model yang diusulkan pada @model-arch dirancang secara spesifik untuk memecahkan dilema akurasi dan efisiensi komputasi pada pengenalan gestur dinamis di perangkat bergerak. Model ini mengintegrasikan empat tahapan komputasi utama:
 
-1. *Prapemrosesan Masukan dan Regularisasi Spasial*:
-   Masukan model berupa sekuens matriks berukuran $T times D$, di mana $T$ adalah panjang sekuens frame (diseragamkan ke panjang maksimum dengan *zero-padding*) dan $D$ adalah dimensi fitur gabungan koordinat landmark beserta kanal mask validitasnya. Lapisan *Spatial Dropout 1D* (rate 0,2) diterapkan di awal untuk mendrop kanal koordinat secara acak sepanjang sekuens, guna mencegah model mengalami ketergantungan berlebih (*co-adaptation*) pada koordinat sendi tertentu.
++ Prapemrosesan Masukan dan Regularisasi Spasial:
+  Masukan model berupa sekuens matriks berukuran $T times D$, di mana $T$ adalah panjang sekuens frame (diseragamkan ke panjang maksimum dengan zero-padding) dan $D$ adalah dimensi fitur gabungan koordinat landmark beserta kanal mask validitasnya. Lapisan Spatial Dropout 1D (rate 0,2) diterapkan di awal untuk mendrop kanal koordinat secara acak sepanjang sekuens, guna mencegah model mengalami ketergantungan berlebih (co-adaptation) pada koordinat sendi tertentu.
 
-2. *Blok Konvolusi 1D Bertingkat (Dua Lapisan Conv1D + MaxPooling 1D)*:
-   Model menerapkan dua blok konvolusi temporal bertingkat, di mana setiap blok terdiri atas lapisan `Conv1D(filters=128, kernel_size=5, padding="same")`, `BatchNormalization`, aktivasi `ReLU`, dan `MaxPooling1D(pool_size=2)`. Pemilihan dua lapisan Conv1D bertingkat ini didasari oleh dua alasan teknis fundamental:
-   - *Hierarki Kinematika Spasial-Temporal*: Lapisan Conv1D pertama menangkap dinamika mikro lokal (kecepatan sesaat dan perubahan sudut antar-sendi jari) pada rentang 5 frame (~166 ms). Lapisan Conv1D kedua beroperasi pada representasi yang telah direduksi, menghasilkan *effective receptive field* yang berlipat ganda (~10–14 frame atau ~350–450 ms) untuk menangkap trajektori meso pembentukan gestur, sekaligus meredam derau (*jitter*) deteksi MediaPipe.
-   - *Kompresi Temporal ($4times$ Downsampling)*: Penerapan dua lapisan MaxPooling1D berturut-turut (masing-masing faktor reduksi 2) memadatkan dimensi waktu sebesar $2 times 2 = 4times$ (misalnya dari 60 frame menjadi 15 langkah waktu). Kompresi ini memangkas iterasi rekuren pada lapisan BiGRU berikutnya sebesar 75%, yang menjadi faktor kunci dalam menekan latensi inferensi di bawah 100 ms pada prosesor mobile ARM.
++ Blok Konvolusi 1D Bertingkat (Dua Lapisan Conv1D + MaxPooling 1D):
+  Model menerapkan dua blok konvolusi temporal bertingkat, di mana setiap blok terdiri atas lapisan `Conv1D(filters=128, kernel_size=5, padding="same")`, `BatchNormalization`, aktivasi `ReLU`, dan `MaxPooling1D(pool_size=2)`. Pemilihan dua lapisan Conv1D bertingkat ini didasari oleh dua alasan teknis fundamental:
+  + Hierarki Kinematika Spasial-Temporal: Lapisan Conv1D pertama menangkap dinamika mikro lokal (kecepatan sesaat dan perubahan sudut antar-sendi jari) pada rentang 5 frame (~166 ms). Lapisan Conv1D kedua beroperasi pada representasi yang telah direduksi, menghasilkan effective receptive field yang berlipat ganda (~10–14 frame atau ~350–450 ms) untuk menangkap trajektori meso pembentukan gestur, sekaligus meredam derau (jitter) deteksi MediaPipe.
+  + Kompresi Temporal ($4times$ Downsampling): Penerapan dua lapisan MaxPooling1D berturut-turut (masing-masing faktor reduksi 2) memadatkan dimensi waktu sebesar $2 times 2 = 4times$ (misalnya dari 60 frame menjadi 15 langkah waktu). Kompresi ini memangkas iterasi rekuren pada lapisan BiGRU berikutnya sebesar 75%, yang menjadi faktor kunci dalam menekan latensi inferensi di bawah 100 ms pada prosesor mobile ARM.
 
-3. *Lapisan Rekuren Bidirectional GRU (BiGRU)*:
-   Fitur temporal yang telah tereduksi kemudian diproses oleh dua lapisan bertumpuk *Bidirectional Gated Recurrent Unit* (BiGRU) dengan 192 unit tersembunyi. GRU dipilih dibanding LSTM karena memiliki struktur *gate* yang lebih ringkas (hanya *reset* dan *update gate* tanpa memori sel terpisah), sehingga menghemat parameter hingga ~25% dan mempercepat inferensi *on-device*. Sifat *bidirectional* memastikan bahwa representasi pada setiap langkah waktu merangkum konteks pergerakan dari arah maju ($arrow.r(h)_t$) dan arah mundur ($arrow.l(h)_t$). Kedua lapisan disetel dengan `return_sequences=True` agar seluruh trajektori temporal tetap terjaga untuk dievaluasi oleh mekanisme atensi.
++ Lapisan Rekuren Bidirectional GRU (BiGRU):
+  Fitur temporal yang telah tereduksi kemudian diproses oleh dua lapisan bertumpuk Bidirectional Gated Recurrent Unit (BiGRU) dengan 192 unit tersembunyi. GRU dipilih dibanding LSTM karena memiliki struktur gate yang lebih ringkas (hanya reset dan update gate tanpa memori sel terpisah), sehingga menghemat parameter hingga ~25% dan mempercepat inferensi on-device. Sifat bidirectional memastikan bahwa representasi pada setiap langkah waktu merangkum konteks pergerakan dari arah maju ($arrow.r(h)_t$) dan arah mundur ($arrow.l(h)_t$). Kedua lapisan disetel dengan `return_sequences=True` agar seluruh trajektori temporal tetap terjaga untuk dievaluasi oleh mekanisme atensi.
 
-4. *Lapisan Temporal Attention dan Klasifikasi*:
-   Lapisan *Temporal Attention* ditempatkan tepat setelah BiGRU untuk mengagregasi sekuens vektor tersembunyi $[h_1, h_2, dots, h_(T')]$ menjadi satu vektor konteks $c$. Alih-alih hanya mengambil *state* terakhir $h_T$ yang rentan terhadap *recency bias* (karena gestur di akhir video umumnya hanya berupa gerakan tangan kembali istirahat atau *padding*), mekanisme atensi secara otomatis mempelajari bobot kepentingan setiap frame dan memprioritaskan momen puncak formasi gestur (*apex frames*). Vektor konteks $c$ selanjutnya diproses melalui lapisan *Dense* (192 unit, ReLU, L2 regularizer), *Batch Normalization*, *Dropout* (0,3), dan lapisan *Dense* keluaran dengan fungsi *Softmax* untuk menghasilkan distribusi probabilitas terhadap 20 kelas gestur BISINDO Solo.
++ Lapisan Temporal Attention dan Klasifikasi:
+  Lapisan Temporal Attention ditempatkan tepat setelah BiGRU untuk mengagregasi sekuens vektor tersembunyi $[h_1, h_2, dots, h_(T')]$ menjadi satu vektor konteks $c$. Alih-alih hanya mengambil state terakhir $h_T$ yang rentan terhadap recency bias (karena gestur di akhir video umumnya hanya berupa gerakan tangan kembali istirahat atau padding), mekanisme atensi secara otomatis mempelajari bobot kepentingan setiap frame dan memprioritaskan momen puncak formasi gestur (apex frames). Vektor konteks $c$ selanjutnya diproses melalui lapisan Dense (192 unit, ReLU, L2 regularizer), Batch Normalization, Dropout (0,3), dan lapisan Dense keluaran dengan fungsi Softmax untuk menghasilkan distribusi probabilitas terhadap 20 kelas gestur BISINDO Solo.
 
 == Hyperparameter Tuning
 Hyperparameter yang dioptimasi dalam penelitian ini meliputi parameter arsitektur dan parameter pelatihan seperti dirangkum pada @tbl-hyperparameter.
@@ -516,17 +411,17 @@ Penelitian ini dilaksanakan dalam delapan tahap selama sembilan bulan, terhitung
     align: left,
 
     table.header(
-      table.cell(rowspan: 2, align: center)[*Kegiatan*],
-      table.cell(colspan: 9, align: center)[*Timeline*],
-      table.cell(align: center)[*Sep*],
-      table.cell(align: center)[*Okt*],
-      table.cell(align: center)[*Nov*],
-      table.cell(align: center)[*Des*],
-      table.cell(align: center)[*Jan*],
-      table.cell(align: center)[*Feb*],
-      table.cell(align: center)[*Mar*],
-      table.cell(align: center)[*Apr*],
-      table.cell(align: center)[*Mei*],
+      table.cell(rowspan: 2, align: center)[Kegiatan],
+      table.cell(colspan: 9, align: center)[Timeline],
+      table.cell(align: center)[Sep],
+      table.cell(align: center)[Okt],
+      table.cell(align: center)[Nov],
+      table.cell(align: center)[Des],
+      table.cell(align: center)[Jan],
+      table.cell(align: center)[Feb],
+      table.cell(align: center)[Mar],
+      table.cell(align: center)[Apr],
+      table.cell(align: center)[Mei],
     ),
 
     table.cell(inset: 1em)[Studi literatur dan identifikasi masalah],
@@ -601,8 +496,10 @@ Penelitian ini dilaksanakan dalam delapan tahap selama sembilan bulan, terhitung
     table.cell(fill: rgb("#cbe1bd"))[],
     table.cell(fill: rgb("#cbe1bd"))[],
   ),
-  caption: "Jadwal pelaksanaan penelitian Sep 2026 - Mei 2027",
+  caption: "Jadwal pelaksanaan penelitian Sep 2026 + Mei 2027",
 ) <tbl-jadwal>
+
+#colbreak()
 
 #bibliography("refs.bib", style: "apa", title: "Daftar Pustaka")
 
