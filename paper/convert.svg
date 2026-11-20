@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1259.5 533.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3c3bf;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #cee4bf;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: #f7ebb4;
+      }
+
+      .cls-4 {
+        fill: #bfdcec;
+      }
+
+      .cls-9 {
+        font-family: Rubik-Regular, Rubik;
+        font-size: 35.75px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-17 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #231f20;
+        stroke-width: 2px;
+      }
+
+      .cls-18 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-19 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-20 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-21 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #e1ead9;
+        stroke: #808285;
+      }
+
+      .cls-22 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-23 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-24 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-25 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+
+      .cls-26 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-27 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-28 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-29 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-30 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" x="12.84" y="124.53" width="1233.82" height="160.54" rx="19.27" ry="19.27"/>
+  <rect class="cls-4" x="29.75" y="4.99" width="1200" height="65.2"/>
+  <text class="cls-9" transform="translate(481.6 50.88)"><tspan class="cls-19" x="0" y="0">T</tspan><tspan class="cls-10" x="17.16" y="0">ensorFl</tspan><tspan class="cls-7" x="140.75" y="0">o</tspan><tspan class="cls-29" x="160.81" y="0">w</tspan><tspan x="188.66" y="0" xml:space="preserve"> Model</tspan></text>
+  <g>
+    <rect class="cls-2" x="29.75" y="188.71" width="370" height="65.2"/>
+    <text class="cls-9" transform="translate(108.47 234.59)"><tspan x="0" y="0">Qua</tspan><tspan class="cls-15" x="65.46" y="0">n</tspan><tspan x="86.84" y="0">tiz</tspan><tspan class="cls-13" x="127.67" y="0">a</tspan><tspan x="147.22" y="0">tion</tspan></text>
+    <rect class="cls-2" x="399.75" y="188.71" width="430" height="65.2"/>
+    <text class="cls-9" transform="translate(415.61 234.6)"><tspan x="0" y="0">GP</tspan><tspan class="cls-30" x="47.3" y="0">U</tspan><tspan x="71.68" y="0">/XNN</tspan><tspan class="cls-21" x="161.13" y="0">P</tspan><tspan x="183.76" y="0">ac</tspan><tspan class="cls-17" x="223.23" y="0">k</tspan><tspan x="241.25" y="0" xml:space="preserve"> Deleg</tspan><tspan class="cls-13" x="344.71" y="0">a</tspan><tspan x="364.27" y="0">te</tspan></text>
+    <rect class="cls-2" x="829.75" y="188.71" width="400" height="65.2"/>
+    <text class="cls-9" transform="translate(848.91 234.6)"><tspan x="0" y="0">G</tspan><tspan class="cls-15" x="24.35" y="0">r</tspan><tspan x="37.65" y="0">aph</tspan><tspan class="cls-11" x="100.46" y="0"> </tspan><tspan class="cls-18" x="108.29" y="0">T</tspan><tspan class="cls-15" x="125.63" y="0">r</tspan><tspan x="138.93" y="0">ans</tspan><tspan class="cls-22" x="198.56" y="0">f</tspan><tspan x="211.93" y="0">orm</tspan><tspan class="cls-13" x="277.82" y="0">a</tspan><tspan x="297.38" y="0">tion</tspan></text>
+  </g>
+  <rect class="cls-3" x="29.75" y="339.4" width="1200" height="65.2"/>
+  <text class="cls-9" transform="translate(465.01 385.28)"><tspan x="0" y="0">TFLite Model (</tspan><tspan class="cls-24" x="232.85" y="0">.</tspan><tspan x="240.89" y="0">tflit</tspan><tspan class="cls-8" x="298.95" y="0">e</tspan><tspan x="317.4" y="0">)</tspan></text>
+  <rect class="cls-1" x="29.75" y="458.93" width="1200" height="65.2"/>
+  <text class="cls-9" transform="translate(420.07 504.82)"><tspan x="0" y="0">And</tspan><tspan class="cls-16" x="66.89" y="0">r</tspan><tspan x="80.05" y="0">oid D</tspan><tspan class="cls-23" x="163.88" y="0">e</tspan><tspan x="183.3" y="0">vice I</tspan><tspan class="cls-14" x="270.03" y="0">n</tspan><tspan class="cls-20" x="291.37" y="0">f</tspan><tspan x="304.74" y="0">e</tspan><tspan class="cls-26" x="324.76" y="0">r</tspan><tspan class="cls-10" x="337.92" y="0">ence</tspan></text>
+  <text class="cls-9" transform="translate(490.48 170.31)"><tspan x="0" y="0">TFLite Co</tspan><tspan class="cls-27" x="157.45" y="0">n</tspan><tspan class="cls-28" x="178.61" y="0">v</tspan><tspan class="cls-10" x="197.77" y="0">erte</tspan><tspan class="cls-12" x="265.38" y="0">r</tspan></text>
+  <line class="cls-5" x1="629.75" y1="70.19" x2="629.75" y2="124.53"/>
+  <line class="cls-5" x1="629.75" y1="285.06" x2="629.75" y2="339.4"/>
+  <line class="cls-5" x1="629.75" y1="404.6" x2="629.75" y2="458.93"/>
+  <polygon class="cls-25" points="629.75 124.53 621.57 110.36 637.93 110.36 629.75 124.53"/>
+  <polygon class="cls-25" points="629.75 339.4 621.57 325.23 637.93 325.23 629.75 339.4"/>
+  <polygon class="cls-25" points="629.75 458.93 621.57 444.76 637.93 444.76 629.75 458.93"/>
+</svg>

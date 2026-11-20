@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="RNN" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 835.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        fill: #f7ecb4;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #cee4bf;
+        stroke: #000;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #231f20;
+      }
+
+      .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        font-family: Rubik-Regular, Rubik;
+        font-size: 119.6px;
+        font-variation-settings: 'wght' 400;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="m766.33,385.62h369.01v246.77c0,2.04-1.65,3.69-3.69,3.69h-369.01v-246.77c0-2.04,1.65-3.69,3.69-3.69Z"/>
+  <rect class="cls-3" x="762.64" y="385.62" width="365.09" height="242.92" rx="3.69" ry="3.69"/>
+  <line class="cls-1" x1="945.18" y1="37.38" x2="945.18" y2="385.62"/>
+  <line class="cls-1" x1="10" y1="37.38" x2="945.18" y2="37.38"/>
+  <circle class="cls-4" cx="199.42" cy="526.75" r="115.54"/>
+  <circle class="cls-2" cx="197.06" cy="524.39" r="113.01"/>
+  <line class="cls-1" x1="84.06" y1="524.39" x2="10" y2="524.39"/>
+  <line class="cls-1" x1="10" y1="37.38" x2="10" y2="524.39"/>
+  <line class="cls-1" x1="197.06" y1="213.07" x2="197.06" y2="37.38"/>
+  <circle class="cls-5" cx="197.06" cy="213.07" r="26.85"/>
+  <line class="cls-1" x1="197.06" y1="239.92" x2="197.06" y2="411.38"/>
+  <line class="cls-1" x1="310.07" y1="524.39" x2="762.64" y2="524.39"/>
+  <line class="cls-1" x1="197.06" y1="637.39" x2="197.06" y2="799.15"/>
+  <line class="cls-1" x1="1412.07" y1="799.15" x2="197.06" y2="799.15"/>
+  <line class="cls-1" x1="1412.07" y1="497.54" x2="1127.72" y2="497.54"/>
+  <text class="cls-6" transform="translate(160.64 563.93)"><tspan x="0" y="0">h</tspan></text>
+  <text class="cls-6" transform="translate(912.57 545.09)"><tspan x="0" y="0">h</tspan></text>
+  <text class="cls-6" transform="translate(1313.87 475.25)"><tspan x="0" y="0">In</tspan></text>
+  <text class="cls-6" transform="translate(1212.46 766.62)"><tspan x="0" y="0">Out</tspan></text>
+  <polygon class="cls-5" points="762.64 524.39 726.78 545.09 726.78 503.68 762.64 524.39"/>
+  <polygon class="cls-5" points="197.06 411.38 176.36 375.52 217.77 375.52 197.06 411.38"/>
+  <polygon class="cls-5" points="1430 799.15 1394.14 819.85 1394.14 778.44 1430 799.15"/>
+  <polygon class="cls-5" points="1127.72 497.54 1163.59 518.25 1163.59 476.84 1127.72 497.54"/>
+</svg>

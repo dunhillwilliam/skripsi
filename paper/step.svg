@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220.97 569.33">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #231f20;
+        stroke-width: 2px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        font-family: Rubik-Regular, Rubik;
+        font-size: 35.75px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-10 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        stroke: #000;
+      }
+
+      .cls-13 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-16 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-18 {
+        letter-spacing: 0em;
+      }
+
+      .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-20 {
+        letter-spacing: -.1em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" x="10.48" y="12.39" width="1200" height="65.2" rx="12.05" ry="12.05"/>
+  <text class="cls-8" transform="translate(389.08 58.28)"><tspan x="0" y="0">Primar</tspan><tspan class="cls-12" x="110.29" y="0">y</tspan><tspan class="cls-3" x="129.03" y="0" xml:space="preserve"> D</tspan><tspan class="cls-2" x="162.42" y="0">a</tspan><tspan x="181.97" y="0">tas</tspan><tspan class="cls-18" x="233.92" y="0">e</tspan><tspan x="253.8" y="0">t Collection</tspan></text>
+  <line class="cls-5" x1="610.48" y1="77.59" x2="610.48" y2="131.93"/>
+  <polygon class="cls-10" points="610.48 131.93 602.3 117.76 618.66 117.76 610.48 131.93"/>
+  <rect class="cls-6" x="10.48" y="131.93" width="1200" height="65.2" rx="12.05" ry="12.05"/>
+  <text class="cls-8" transform="translate(447.66 177.81)"><tspan x="0" y="0">D</tspan><tspan class="cls-16" x="24.63" y="0">a</tspan><tspan x="44.19" y="0">ta P</tspan><tspan class="cls-15" x="109.61" y="0">r</tspan><tspan class="cls-7" x="122.77" y="0">ep</tspan><tspan class="cls-15" x="164.1" y="0">r</tspan><tspan x="177.25" y="0">ocessing</tspan></text>
+  <line class="cls-5" x1="610.48" y1="197.13" x2="610.48" y2="251.46"/>
+  <polygon class="cls-10" points="610.48 251.46 602.3 237.29 618.66 237.29 610.48 251.46"/>
+  <rect class="cls-6" x="10.48" y="251.46" width="1200" height="65.2" rx="12.05" ry="12.05"/>
+  <text class="cls-8" transform="translate(443.99 297.35)"><tspan x="0" y="0">Modelling &amp;</tspan><tspan class="cls-11" x="192.8" y="0"> </tspan><tspan class="cls-4" x="200.63" y="0">T</tspan><tspan class="cls-14" x="217.97" y="0">r</tspan><tspan x="231.27" y="0">aining</tspan></text>
+  <line class="cls-5" x1="610.48" y1="316.66" x2="610.48" y2="370.99"/>
+  <polygon class="cls-10" points="610.48 370.99 602.3 356.83 618.66 356.83 610.48 370.99"/>
+  <rect class="cls-6" x="10.48" y="370.99" width="1200" height="65.2" rx="12.05" ry="12.05"/>
+  <text class="cls-8" transform="translate(333.07 416.88)"><tspan x="0" y="0">TFLite Qua</tspan><tspan class="cls-14" x="178.58" y="0">n</tspan><tspan x="199.96" y="0">tiz</tspan><tspan class="cls-2" x="240.78" y="0">a</tspan><tspan x="260.34" y="0">tion &amp; Co</tspan><tspan class="cls-13" x="411.81" y="0">n</tspan><tspan class="cls-17" x="432.98" y="0">v</tspan><tspan x="452.14" y="0">ersion</tspan></text>
+  <line class="cls-5" x1="610.48" y1="436.19" x2="610.48" y2="490.53"/>
+  <polygon class="cls-10" points="610.48 490.53 602.3 476.36 618.66 476.36 610.48 490.53"/>
+  <rect class="cls-6" x="10.48" y="490.53" width="1200" height="65.2" rx="12.05" ry="12.05"/>
+  <text class="cls-8" transform="translate(353.77 536.41)"><tspan class="cls-17" x="0" y="0">E</tspan><tspan class="cls-9" x="21.02" y="0">v</tspan><tspan x="40.15" y="0">alu</tspan><tspan class="cls-2" x="90.09" y="0">a</tspan><tspan x="109.65" y="0">tion &amp; </tspan><tspan class="cls-19" x="216.79" y="0">R</tspan><tspan x="240" y="0">eal</tspan><tspan class="cls-1" x="288.44" y="0">-</tspan><tspan class="cls-3" x="303.38" y="0">Time</tspan><tspan class="cls-11" x="384.54" y="0"> </tspan><tspan class="cls-20" x="392.37" y="0">T</tspan><tspan class="cls-7" x="409.53" y="0">esting</tspan></text>
+</svg>

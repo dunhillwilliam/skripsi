@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 901.54">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        fill: #f3c3bf;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-7, .cls-9 {
+        stroke: #000;
+      }
+
+      .cls-12 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #cee4bf;
+      }
+
+      .cls-14 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        fill: #f7ebb4;
+      }
+
+      .cls-5 {
+        fill: #bfdcec;
+      }
+
+      .cls-16 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-18 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-20 {
+        letter-spacing: 0em;
+      }
+
+      .cls-21 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-22 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-23 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-24, .cls-25 {
+        stroke-width: 0px;
+      }
+
+      .cls-26 {
+        letter-spacing: 0em;
+      }
+
+      .cls-27 {
+        letter-spacing: 0em;
+      }
+
+      .cls-28 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-29 {
+        letter-spacing: 0em;
+      }
+
+      .cls-30 {
+        font-family: Rubik-Regular, Rubik;
+        font-size: 43.73px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-31 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6, .cls-7, .cls-10 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-6, .cls-11 {
+        stroke: #231f20;
+      }
+
+      .cls-32 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-33 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-34 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-25 {
+        fill: #231f20;
+      }
+
+      .cls-35 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-36 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-37 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        fill: #deeef5;
+        stroke: #808285;
+      }
+
+      .cls-38 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-39 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-40 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        stroke: #414042;
+      }
+
+      .cls-41 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-42 {
+        letter-spacing: 0em;
+      }
+
+      .cls-43 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        fill: #d8c7e0;
+      }
+
+      .cls-44 {
+        letter-spacing: 0em;
+      }
+
+      .cls-45 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Input">
+    <rect class="cls-8" x="-161.34" y="357.58" width="874.65" height="188.19" rx="35.77" ry="35.77" transform="translate(-175.69 727.67) rotate(-90)"/>
+    <rect class="cls-5" x="-321.12" y="407.95" width="749.7" height="87.46" transform="translate(-397.95 505.41) rotate(-90)"/>
+    <g>
+      <rect class="cls-5" x="61.13" y="621.18" width="374.85" height="87.46" transform="translate(-416.36 913.46) rotate(-90)"/>
+      <text class="cls-30" transform="translate(256.4 754.78) rotate(-90)"><tspan class="cls-31" x="0" y="0">F</tspan><tspan x="25.01" y="0">e</tspan><tspan class="cls-27" x="49.51" y="0">a</tspan><tspan x="73.43" y="0">tu</tspan><tspan class="cls-37" x="116.85" y="0">r</tspan><tspan class="cls-44" x="132.95" y="0">es</tspan></text>
+      <rect class="cls-5" x="61.13" y="194.72" width="374.85" height="87.46" transform="translate(10.1 487) rotate(-90)"/>
+      <text class="cls-30" transform="translate(257.48 321.91) rotate(-90)"><tspan x="0" y="0">Masking</tspan></text>
+    </g>
+    <rect class="cls-5" x="89.78" y="407.95" width="749.7" height="87.46" transform="translate(12.95 916.3) rotate(-90)"/>
+    <text class="cls-30" transform="translate(475.43 644.95) rotate(-90)"><tspan x="0" y="0">Sp</tspan><tspan class="cls-26" x="53.27" y="0">a</tspan><tspan x="77.19" y="0" xml:space="preserve">tial  D</tspan><tspan class="cls-12" x="191.2" y="0">r</tspan><tspan x="207.29" y="0">opout 1D</tspan></text>
+    <line class="cls-6" x1="97.46" y1="451.68" x2="158.96" y2="451.68"/>
+    <line class="cls-6" x1="158.96" y1="664.91" x2="158.96" y2="238.45"/>
+    <line class="cls-6" x1="420.89" y1="451.68" x2="348.4" y2="451.68"/>
+    <line class="cls-6" x1="570.83" y1="451.68" x2="508.36" y2="451.68"/>
+    <line class="cls-6" x1="158.96" y1="664.91" x2="204.82" y2="664.91"/>
+    <line class="cls-10" x1="158.96" y1="238.45" x2="204.82" y2="238.45"/>
+    <line class="cls-6" x1="291.61" y1="664.91" x2="336.08" y2="664.91"/>
+    <line class="cls-10" x1="291.61" y1="238.45" x2="336.08" y2="238.45"/>
+    <circle class="cls-6" cx="336.08" cy="451.68" r="12.32"/>
+    <line class="cls-6" x1="336.08" y1="664.91" x2="336.08" y2="464"/>
+    <line class="cls-6" x1="336.08" y1="238.45" x2="336.08" y2="439.36"/>
+    <text class="cls-30" transform="translate(65.2 602.97) rotate(-90)"><tspan x="0" y="0">Input Sequence</tspan></text>
+    <circle class="cls-25" cx="336.08" cy="451.68" r="3.01"/>
+    <polygon class="cls-24" points="204.82 238.45 188.59 247.82 188.59 229.08 204.82 238.45"/>
+    <polygon class="cls-24" points="204.82 664.91 188.59 674.28 188.59 655.54 204.82 664.91"/>
+    <polygon class="cls-24" points="336.08 439.36 326.71 423.13 345.46 423.13 336.08 439.36"/>
+    <polygon class="cls-24" points="336.08 464 326.71 480.23 345.46 480.23 336.08 464"/>
+    <polygon class="cls-24" points="420.89 451.68 404.66 461.05 404.66 442.31 420.89 451.68"/>
+    <polygon class="cls-24" points="570.83 451.68 554.6 461.05 554.6 442.31 570.83 451.68"/>
+  </g>
+  <g id="Conv">
+    <rect class="cls-9" x="570.55" y="15.94" width="406.28" height="871.24" rx="33.94" ry="33.94"/>
+    <rect class="cls-3" x="587.78" y="54.2" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(641.73 115.66)"><tspan x="0" y="0">Co</tspan><tspan class="cls-21" x="54.23" y="0">n</tspan><tspan x="80.12" y="0">v1D (k=5)</tspan></text>
+    <rect class="cls-3" x="587.78" y="141.67" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(653.87 203.12)"><tspan x="0" y="0">B</tspan><tspan class="cls-45" x="29.21" y="0">a</tspan><tspan class="cls-16" x="53.13" y="0">tch Norm</tspan></text>
+    <rect class="cls-3" x="587.78" y="229.13" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(721.54 290.59)"><tspan class="cls-17" x="0" y="0">R</tspan><tspan x="28.38" y="0">e</tspan><tspan class="cls-33" x="52.87" y="0">L</tspan><tspan x="76.66" y="0">U</tspan></text>
+    <rect class="cls-3" x="587.78" y="316.6" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(633.12 378.05)"><tspan x="0" y="0">Max</tspan><tspan class="cls-20" x="82.43" y="0">P</tspan><tspan x="110.2" y="0">ool1D </tspan><tspan class="cls-35" x="230.6" y="0">(</tspan><tspan class="cls-41" x="244.5" y="0">2</tspan><tspan x="269.39" y="0">)</tspan></text>
+    <rect class="cls-3" x="587.78" y="493.28" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(641.73 554.74)"><tspan x="0" y="0">Co</tspan><tspan class="cls-21" x="54.23" y="0">n</tspan><tspan x="80.12" y="0">v1D (k=5)</tspan></text>
+    <rect class="cls-3" x="587.78" y="580.74" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(653.87 642.2)"><tspan x="0" y="0">B</tspan><tspan class="cls-45" x="29.21" y="0">a</tspan><tspan class="cls-16" x="53.13" y="0">tch Norm</tspan></text>
+    <rect class="cls-3" x="587.78" y="668.21" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(721.54 730.42)"><tspan class="cls-17" x="0" y="0">R</tspan><tspan x="28.38" y="0">e</tspan><tspan class="cls-33" x="52.87" y="0">L</tspan><tspan x="76.66" y="0">U</tspan></text>
+    <rect class="cls-3" x="587.78" y="755.67" width="374.85" height="87.46"/>
+    <text class="cls-30" transform="translate(633.12 817.13)"><tspan x="0" y="0">Max</tspan><tspan class="cls-20" x="82.43" y="0">P</tspan><tspan x="110.2" y="0">ool1D </tspan><tspan class="cls-35" x="230.6" y="0">(</tspan><tspan class="cls-41" x="244.5" y="0">2</tspan><tspan x="269.39" y="0">)</tspan></text>
+    <line class="cls-7" x1="775.2" y1="404.06" x2="775.2" y2="493.28"/>
+    <line class="cls-6" x1="1039.39" y1="451.68" x2="976.92" y2="451.68"/>
+    <polygon class="cls-24" points="775.2 493.28 765.83 477.05 784.57 477.05 775.2 493.28"/>
+    <polygon class="cls-24" points="1042.4 451.68 1026.17 461.05 1026.17 442.31 1042.4 451.68"/>
+  </g>
+  <g id="Output">
+    <rect class="cls-9" x="1476.63" y="13.96" width="283.71" height="869.56" rx="33.94" ry="33.94"/>
+    <rect class="cls-2" x="1417.99" y="657.85" width="249.9" height="87.46" transform="translate(841.36 2244.52) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1560.66 794.27) rotate(-90)"><tspan x="0" y="0">Dense </tspan><tspan class="cls-1" x="138.63" y="0">(</tspan><tspan x="151.88" y="0">1)</tspan></text>
+    <rect class="cls-2" x="1505.45" y="595.37" width="374.85" height="87.46" transform="translate(1053.77 2331.98) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1710.6 760.45) rotate(-90)"><tspan x="0" y="0">B</tspan><tspan class="cls-29" x="29.21" y="0">a</tspan><tspan x="53.13" y="0">tch Norm</tspan></text>
+    <rect class="cls-2" x="1505.45" y="220.52" width="374.85" height="87.46" transform="translate(1428.62 1957.13) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1710.6 398.83) rotate(-90)"><tspan x="0" y="0">D</tspan><tspan class="cls-34" x="30.13" y="0">r</tspan><tspan x="46.22" y="0">opout </tspan><tspan class="cls-18" x="176.63" y="0">(</tspan><tspan class="cls-14" x="190.1" y="0">0</tspan><tspan x="217.04" y="0">.3)</tspan></text>
+    <rect class="cls-2" x="1491.05" y="407.95" width="750.43" height="87.46" transform="translate(1414.59 2317.95) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1883.99 564.78) rotate(-90)"><tspan x="0" y="0">Dense </tspan><tspan class="cls-35" x="138.63" y="0">(</tspan><tspan class="cls-42" x="152.54" y="0">2</tspan><tspan class="cls-36" x="178.21" y="0">0</tspan><tspan class="cls-42" x="204.67" y="0">)</tspan></text>
+    <rect class="cls-2" x="1417.99" y="407.95" width="249.9" height="87.46" transform="translate(1091.26 1994.62) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1560.66 505.34) rotate(-90)"><tspan class="cls-43" x="0" y="0">R</tspan><tspan class="cls-40" x="28.38" y="0">e</tspan><tspan class="cls-28" x="52.87" y="0">L</tspan><tspan x="76.66" y="0">U</tspan></text>
+    <rect class="cls-2" x="1417.99" y="158.04" width="249.9" height="87.46" transform="translate(1341.16 1744.72) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1560.66 226.93) rotate(-90)"><tspan x="0" y="0">L2</tspan></text>
+    <line class="cls-6" x1="1822.54" y1="449.31" x2="1760.06" y2="449.31"/>
+    <line class="cls-6" x1="1649.14" y1="451.68" x2="1586.67" y2="451.68"/>
+    <polygon class="cls-24" points="1648 451.68 1631.77 461.05 1631.77 442.31 1648 451.68"/>
+    <polygon class="cls-24" points="1822.54 449.31 1806.3 458.69 1806.3 439.94 1822.54 449.31"/>
+  </g>
+  <g id="GRU">
+    <rect class="cls-9" x="1042.34" y="12.54" width="218.76" height="872.41" rx="33.94" ry="33.94"/>
+    <rect class="cls-11" x="965.44" y="176.79" width="374.85" height="174.93" transform="translate(888.61 1417.12) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1135.02 328.13) rotate(-90)"><tspan x="0" y="0">BiGRU</tspan><tspan x="-29.65" y="52.48">192 Units</tspan></text>
+    <rect class="cls-11" x="965.44" y="551.64" width="374.85" height="174.93" transform="translate(513.76 1791.97) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1135.02 703.55) rotate(-90)"><tspan x="0" y="0">BiGRU</tspan><tspan x="-29.65" y="52.48">192 Units</tspan></text>
+    <line class="cls-6" x1="1324.22" y1="451.68" x2="1261.75" y2="451.68"/>
+    <polygon class="cls-24" points="1324.22 451.68 1307.99 461.05 1307.99 442.31 1324.22 451.68"/>
+  </g>
+  <g id="Attention">
+    <rect class="cls-4" x="993.11" y="407.95" width="749.7" height="87.46" transform="translate(916.27 1819.64) rotate(-90)"/>
+    <text class="cls-30" transform="translate(1378.77 645.91) rotate(-90)"><tspan class="cls-39" x="0" y="0">T</tspan><tspan class="cls-44" x="20.99" y="0">empo</tspan><tspan class="cls-13" x="135.52" y="0">r</tspan><tspan x="151.79" y="0">al</tspan><tspan class="cls-22" x="186.56" y="0"> </tspan><tspan class="cls-38" x="196.09" y="0">A</tspan><tspan class="cls-19" x="224.35" y="0">tte</tspan><tspan class="cls-13" x="283.03" y="0">n</tspan><tspan x="309.18" y="0">tion</tspan></text>
+    <line class="cls-6" x1="1474.16" y1="451.68" x2="1411.69" y2="451.68"/>
+    <polygon class="cls-24" points="1476.48 451.68 1460.25 461.05 1460.25 442.31 1476.48 451.68"/>
+  </g>
+</svg>

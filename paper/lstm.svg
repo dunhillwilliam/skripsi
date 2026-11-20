@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="LSTM" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1435.96 966.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        fill: #f7ecb4;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6, .cls-7 {
+        font-family: Rubik-Regular, Rubik;
+        font-size: 119.6px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-3 {
+        fill: #cee4bf;
+        stroke: #000;
+      }
+
+      .cls-4, .cls-8 {
+        fill: #231f20;
+      }
+
+      .cls-8 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="m766.33,598.93h369.01v246.77c0,2.04-1.65,3.69-3.69,3.69h-369.01v-246.77c0-2.04,1.65-3.69,3.69-3.69Z"/>
+  <rect class="cls-3" x="762.64" y="598.93" width="365.09" height="242.92" rx="3.69" ry="3.69"/>
+  <line class="cls-1" x1="945.18" y1="123.03" x2="945.18" y2="289.83"/>
+  <line class="cls-1" x1="236.07" y1="125.39" x2="945.18" y2="125.39"/>
+  <circle class="cls-4" cx="199.42" cy="730.93" r="115.54"/>
+  <circle class="cls-2" cx="197.06" cy="728.58" r="113.01"/>
+  <line class="cls-1" x1="84.06" y1="737.7" x2="10" y2="737.7"/>
+  <line class="cls-1" x1="10" y1="123.03" x2="10" y2="737.7"/>
+  <line class="cls-1" x1="84.06" y1="123.03" x2="10" y2="123.03"/>
+  <line class="cls-1" x1="122.31" y1="509.04" x2="198.28" y2="378.33"/>
+  <circle class="cls-8" cx="197.06" cy="378.33" r="26.85"/>
+  <line class="cls-1" x1="1029.42" y1="485.2" x2="942.95" y2="355.06"/>
+  <circle class="cls-8" cx="945.18" cy="351.49" r="26.85"/>
+  <circle class="cls-8" cx="496.01" cy="737.7" r="26.85"/>
+  <line class="cls-1" x1="197.06" y1="513.18" x2="197.06" y2="615.57"/>
+  <line class="cls-1" x1="310.07" y1="737.7" x2="469.17" y2="737.7"/>
+  <line class="cls-1" x1="496.01" y1="737.7" x2="636.96" y2="594.72"/>
+  <line class="cls-1" x1="664.35" y1="737.7" x2="762.64" y2="737.7"/>
+  <line class="cls-1" x1="197.06" y1="841.58" x2="197.06" y2="940.97"/>
+  <line class="cls-1" x1="1412.07" y1="940.97" x2="197.06" y2="940.97"/>
+  <line class="cls-1" x1="1412.07" y1="688.49" x2="1127.72" y2="688.49"/>
+  <text class="cls-7" transform="translate(560.26 598.93)"><tspan x="0" y="0">i</tspan></text>
+  <text class="cls-6" transform="translate(55.31 460.44)"><tspan x="0" y="0">f</tspan></text>
+  <text class="cls-7" transform="translate(1031.82 450.54)"><tspan x="0" y="0">o</tspan></text>
+  <text class="cls-7" transform="translate(160.64 768.11)"><tspan x="0" y="0">h</tspan></text>
+  <circle class="cls-4" cx="199.42" cy="125.39" r="115.54"/>
+  <circle class="cls-2" cx="197.06" cy="123.03" r="113.01"/>
+  <text class="cls-7" transform="translate(157.23 162.57)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-7" transform="translate(908.81 764.55)"><tspan class="cls-5" x="0" y="0">h</tspan><tspan x="68.41" y="0">’</tspan></text>
+  <text class="cls-7" transform="translate(1313.87 666.21)"><tspan x="0" y="0">In</tspan></text>
+  <text class="cls-7" transform="translate(1212.46 908.44)"><tspan x="0" y="0">Out</tspan></text>
+  <polygon class="cls-8" points="762.64 737.7 726.78 758.4 726.78 716.99 762.64 737.7"/>
+  <polygon class="cls-8" points="469.17 737.7 433.3 758.4 433.3 716.99 469.17 737.7"/>
+  <polygon class="cls-8" points="197.06 615.57 176.36 579.71 217.77 579.71 197.06 615.57"/>
+  <line class="cls-1" x1="945.18" y1="495.25" x2="945.18" y2="597.64"/>
+  <polygon class="cls-8" points="945.18 597.64 924.48 561.78 965.89 561.78 945.18 597.64"/>
+  <line class="cls-1" x1="197.06" y1="236.03" x2="197.06" y2="340.34"/>
+  <polygon class="cls-8" points="197.06 351.49 176.36 315.63 217.77 315.63 197.06 351.49"/>
+  <polygon class="cls-8" points="945.18 325.7 924.48 289.83 965.89 289.83 945.18 325.7"/>
+  <polygon class="cls-8" points="84.06 123.03 48.19 143.73 48.19 102.32 84.06 123.03"/>
+  <polygon class="cls-8" points="310.07 123.03 345.93 143.73 345.93 102.32 310.07 123.03"/>
+  <polygon class="cls-8" points="1430 940.97 1394.14 961.67 1394.14 920.26 1430 940.97"/>
+  <polygon class="cls-8" points="1127.72 688.49 1163.59 709.2 1163.59 667.79 1127.72 688.49"/>
+</svg>
